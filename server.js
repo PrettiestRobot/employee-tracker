@@ -1,7 +1,6 @@
 const express = require('express');
 const inquirer = require('inquirer');
 const msql = require('mysql2');
-const { exitCode } = require('process');
 
 
 const PORT = process.env.PORT || 3001;
@@ -22,6 +21,7 @@ const db = mysql.createConnection(
         database: 'employee_db'
     }
 )
+
 
 
 app.listen(PORT, () => {
